@@ -9,7 +9,7 @@
         <label>Password:</label>
         <input type="password" v-model="password" placeholder="Your password" required>
       </div>
-      <button type="submit">Login</button>
+      <button class="btn btn-primary" type="submit">Login</button>
     </form>
   </div>
 </template>
@@ -24,11 +24,17 @@ export default {
       password: ''
     }
   },
+  beforeRouteEnter (to, from, next) {
+    if (localStorage.getItem('isLogged')) {
+      next({ name: 'posts' })
+    }
+    next()
+  },
   methods: {
     submitForm () {
       const success = API.login({ password: this.password, username: this.username, isDemo: true })
-      console.log(3333, success)
       if (success) {
+        window.localStorage.setItem('isLogged', '1')
         this.$router.push({ name: 'posts' })
       }
     }

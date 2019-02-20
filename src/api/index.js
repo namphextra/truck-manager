@@ -5,6 +5,22 @@ export default {
     if (isDemo) {
       return username === 'demo' && password === 'demo'
     }
-    return http.post('/login')
+    const param = {
+      username,
+      password
+    }
+    return http.post('/login', param)
+  },
+  getPosts () {
+    return http.get('/posts')
+  },
+  updatePosts (param) {
+    return http.put('/posts', param)
+  },
+  createPosts (param) {
+    return http.post('/posts', param)
+  },
+  deletePosts (param) {
+    return http.delete(`/posts/${param.id}`)
   }
 }
