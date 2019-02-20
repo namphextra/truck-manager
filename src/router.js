@@ -14,16 +14,29 @@ const router = new Router({
     {
       path: '/admin',
       name: 'admin',
-      component: () => import('./views/Admin'),
-      children: [
-        {
-          path: 'posts',
-          name: 'posts',
-          component: () => import('./views/Posts')
-        }
-      ]
+      component: () => import('./views/Admin')
+    },
+    {
+      path: '/admin/posts',
+      name: 'posts',
+      component: () => import('./views/Posts'),
+      meta: {
+        require_auth: true
+      }
     }
   ]
+})
+
+router.beforeEach((to, from, next) => {
+  window.scrollTo(0, 0)
+  if (to.matched.some(record => record.meta.require_auth)) {
+    if (!window.localStorage.getItem('isLogged')) {
+      next('/')
+    }
+    next()
+  } else {
+    next()
+  }
 })
 
 export default router
