@@ -1,6 +1,7 @@
 'use strict'
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -84,6 +85,12 @@ module.exports = {
     child_process: 'empty'
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new CopyWebpackPlugin([
+      {
+        from: path.join(__dirname, '../src/assets/images'),
+        to: 'assets/images'
+      }
+    ])
   ]
 }

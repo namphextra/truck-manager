@@ -29,14 +29,7 @@ const router = new Router({
 
 router.beforeEach((to, from, next) => {
   window.scrollTo(0, 0)
-  if (to.matched.some(record => record.meta.require_auth)) {
-    if (!window.localStorage.getItem('isLogged')) {
-      next('/')
-    }
-    next()
-  } else {
-    next()
-  }
+  next()
 })
 
 export default router
