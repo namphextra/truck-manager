@@ -1,1 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./variables";
+
+:root {
+    font-size: 14px;
+}
+
+@import "./components/common";
+@import "./components/sidebar";
+@import "./components/section";
+@import "./pages/truck-list";

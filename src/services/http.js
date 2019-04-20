@@ -3,7 +3,7 @@ import axios from 'axios'
 export default {
   async request (method, endpoint, data = {}) {
     try {
-      const url = `localhost${endpoint}`
+      const url = `http://localhost:2401${endpoint}`
       const response = await axios({
         method,
         url,
