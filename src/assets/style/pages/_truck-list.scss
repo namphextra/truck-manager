@@ -1,0 +1,77 @@
+.dashboard {
+    .list-truck {
+        .actions {
+            .checkbox {
+                line-height: 1;
+                height: 16px;
+            }
+        }
+        .kit-section-title, .kit-section-body {
+            &.truck-selected {
+                .kit-section-title__item {
+                    flex: 0;
+                    &.actions {
+                        flex: 1;
+                        .actions__main-bar {
+                            li {
+                                &:first-child {
+                                    background: #f9fafb;
+                                    border-right: 0;
+                                    border-radius: 3px 0 0 3px;
+                                }
+                                &:last-child {
+                                    border-radius: 0 3px 3px 0;
+                                    padding: 0;
+                                    .btn, .dropdown {
+                                        border: 0;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .table-list-item {
+                padding-left: 5px;
+            }
+            .actions {
+                flex: 1;
+                .actions__main-bar {
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        display: inline-block;
+                        box-shadow: 0 1px 0 0 rgba(22,29,37,0.05);
+                        border: 1px solid #c4cdd5;
+                        height: 36px;
+                        padding: 0 10px 0 5px;
+                        &:first-child {
+                            border-radius: 3px;
+                            color: #919eab;
+                            font-weight: 400;
+                            .caret-down {
+                                margin-left: 5px;
+                            }
+                            .selection-count {
+                                margin-left: 10px;
+                            }
+                        }
+                        & > div {
+                            display: inline-block;
+                        }
+                    }
+                }
+                label {
+                    margin: 0;
+                }
+            }
+            .plate, .driver {
+                flex: 4;
+            }
+            .type, .status  {
+                flex: 2;
+            }
+        }
+    }
+}

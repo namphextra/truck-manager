@@ -1,0 +1,30 @@
+.kit-section {
+    .kit-section-title {
+        padding: 12px 16px;
+        .kit-section-title__item {
+            display: inline-block;
+            font-weight: 600;
+            .actions__main-bar {
+                margin: 0;
+                padding: 0;
+                label {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .kit-section-body {
+        .table-list-items {
+            padding: 0 16px;
+            border-top: 1px solid #ebeef0;
+            cursor: pointer;
+            &:hover {
+                background: #f9fafb;
+            }
+            .table-list-item {
+                padding: 24px 0;
+                display: inline-block;
+            }
+        }
+    }
+}
