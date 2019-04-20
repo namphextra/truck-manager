@@ -1,0 +1,35 @@
+.sidebar {
+    width: 224px;
+    height: 100vh;
+    background: #F2F5F8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 14px 16px 16px 32px;
+    box-shadow: 2px 0 0 0 #E6EBF0;
+    .sidebar__name {
+        height: 56px;
+        img {
+            margin-right: 5px;
+            width: 32px;
+            height: 32px;
+        }
+        img, span {
+            vertical-align: middle;
+            font-size: 18px;
+        }
+    }
+    .tree-menu {
+        padding-top: 10px;
+        a {
+            color: #163054;
+            margin-bottom: 16px;
+            display: block;
+            font-size: 1rem;
+            &.router-link-active {
+                color: $color-primary;
+                font-weight: 600;
+            }
+        }
+    }
+}

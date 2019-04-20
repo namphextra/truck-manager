@@ -1,0 +1,58 @@
+.content {
+    margin-left: 224px;
+    width: calc(100% - 224px);
+    min-height: 100vh;
+    padding-top: 32px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.checkbox {
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        &:checked + label {
+            border-color: #428CF0;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: 5px;
+                width: 5px;
+                height: 8px;
+                border: solid #428CF0;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    label {
+        cursor: pointer;
+        user-select: none;
+        background: #FFFFFF;
+        border: 1px solid #B4BECC;
+        border-radius: 3px;
+        height: 16px;
+        width: 16px;
+        position: relative;
+    }
+}
+
+.btn-outline {
+    border: 1px solid #ebeef0;
+}
+
+.caret-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
