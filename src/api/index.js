@@ -1,8 +1,12 @@
 import http from '@/services/http'
 
 export default {
-  getTrucks () {
-    return http.get('/trucks')
+  getTrucks ({ option, filter, page }) {
+    let query = `?_page=${page}&_limit=5`
+    if (option && option !== 'all') {
+      query = `&${option}_like=${filter}`
+    }
+    return http.get(`/trucks${query}`)
   },
   getTruckByPlate (plate) {
     return http.get(`/trucks?plate=${plate}`)
