@@ -1,14 +1,19 @@
 <template>
   <div class="dashboard">
     <h2>Truck List</h2>
-    <div class="filter-list">
-      <span>Filter: </span>
-      <tm-select
-        :options="getOptionsFilter()"
-        v-model="searchTruckOption"
-      />
-      <div class="form-group">
-        <input type="text" v-model="searchTruck" class="form-control">
+    <div class="filter-list row align-items-end">
+      <div class="form-group filter-truck d-flex flex-wrap col-6">
+        <label>Filter: </label>
+        <tm-select
+          class="filter-type"
+          :options="getOptionsFilter()"
+          v-model="searchTruckOption"
+        />
+        <input type="text" v-model="searchTruck" class="form-control filter-search" placeholder="Search trucks">
+        <button class="btn btn-outline btn-search" @click="getFilteredTrucks()">Search</button>
+      </div>
+      <div class="col-6 text-right">
+        <button @click="goToCreateTruckPage()" class="btn btn-primary">Create truck</button>
       </div>
     </div>
     <div class="kit-section list-truck">
@@ -21,7 +26,7 @@
                 <label for="truck-checkmark-all"></label>
               </div>
               <span class="caret-down" v-if="!truckSelected.length"></span>
-              <div class="selection-count" v-else>{{ truckSelected.length }} products selected</div>
+              <div class="selection-count" v-else>{{ truckSelected.length }} truck{{ truckSelected.length === 1 ? '' : 's' }} selected</div>
             </li>
             <li v-if="truckSelected.length">
               <div class="dropdown">
@@ -29,7 +34,7 @@
                   Actions
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdown-action">
-                  <a class="dropdown-item" href="#">Delete selected</a>
+                  <a class="dropdown-item" href="#" @click.prevent="deleteTrucks">Delete selected</a>
                 </div>
               </div>
             </li>
@@ -44,7 +49,7 @@
         <div class="table-list-items d-flex align-items-center" v-for="(truck, index) in trucks" :key="index">
           <div class="actions table-list-item">
             <div class="checkbox">
-              <input type="checkbox" :id="`truck-checkmark-${truck.plate}`" v-model="truckSelected" :value="truck.plate">
+              <input type="checkbox" :id="`truck-checkmark-${truck.plate}`" v-model="truckSelected" :value="truck.id">
               <label :for="`truck-checkmark-${truck.plate}`"></label>
             </div>
           </div>
@@ -69,8 +74,10 @@ export default {
     TmSelect
   },
   async created () {
+    this.$eventHub.$emit('start-progress-line')
     const trucks = await API.getTrucks()
     this.setTrucks(trucks)
+    this.$eventHub.$emit('end-progress-line')
   },
   data () {
     return {
@@ -92,7 +99,7 @@ export default {
         if (val) {
           const trucksLength = this.trucks.length
           for (let i = 0; i < trucksLength; i++) {
-            select.push(this.trucks[i].plate)
+            select.push(this.trucks[i].id)
           }
         }
         this.truckSelected = select
@@ -114,7 +121,7 @@ export default {
           text: 'Truck plate'
         },
         {
-          value: 'cargoType',
+          value: 'cargo_type',
           text: 'Cargo Type'
         },
         {
@@ -122,7 +129,7 @@ export default {
           text: 'Driver'
         },
         {
-          value: 'type',
+          value: 'truck_type',
           text: 'Truck type'
         },
         {
@@ -134,11 +141,11 @@ export default {
           text: 'Dimension'
         },
         {
-          value: 'parkingAddress',
+          value: 'parking_address',
           text: 'Parking Address'
         },
         {
-          value: 'year',
+          value: 'production_year',
           text: 'Production year'
         },
         {
@@ -147,13 +154,36 @@ export default {
         }
       ]
     },
+    async deleteTrucks () {
+      this.$eventHub.$emit('start-progress-line')
+      for (let i = 0; i < this.truckSelected.length; i++) {
+        await API.deleteTrucks(this.truckSelected[i])
+      }
+      const trucks = await API.getTrucks()
+      this.setTrucks(trucks)
+      this.truckSelected = []
+      this.$eventHub.$emit('end-progress-line')
+    },
     goToTruckSetting (plate) {
       this.$router.push({
         name: 'truck',
         params: {
+          type: 'update',
           plate
         }
       })
+    },
+    goToCreateTruckPage () {
+      this.$router.push({
+        name: 'truck',
+        params: {
+          plate: 'create',
+          type: 'create'
+        }
+      })
+    },
+    async getFilteredTrucks () {
+      await API.getTrucks({ option: this.searchTruckOption })
     }
   }
 }

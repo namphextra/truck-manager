@@ -1,5 +1,37 @@
 .dashboard {
+    h2 {
+        margin-bottom: 36px;
+    }
+    .filter-list {
+        margin-bottom: 24px;
+        padding: 0 12px;
+        .filter-truck {
+            label {
+                width: 100%;
+            }
+            margin-bottom: 0;
+            .filter-type {
+                flex: 2;
+                margin-bottom: 0;
+                .form-control {
+                    cursor: pointer;
+                    border-right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+            }
+            .filter-search {
+                flex: 4;
+                border-radius: 0;
+            }
+            .btn-search {
+                border-left: 0;
+                border-radius: 0 3px 3px 0;
+            }
+        }
+    }
     .list-truck {
+        border: 0;
+        box-shadow: none;
         .actions {
             .checkbox {
                 line-height: 1;
@@ -7,6 +39,19 @@
             }
         }
         .kit-section-title, .kit-section-body {
+            box-shadow: none;
+            padding: 12px 16px;
+            .kit-section-title__item {
+                display: inline-block;
+                font-weight: 600;
+                .actions__main-bar {
+                    margin: 0;
+                    padding: 0;
+                    label {
+                        margin: 0;
+                    }
+                }
+            }
             &.truck-selected {
                 .kit-section-title__item {
                     flex: 0;
@@ -32,8 +77,18 @@
                     }
                 }
             }
-            .table-list-item {
-                padding-left: 5px;
+            .table-list-items {
+                padding: 0;
+                border-top: 1px solid #ebeef0;
+                cursor: pointer;
+                &:hover {
+                    background: #f9fafb;
+                }
+                .table-list-item {
+                    padding: 24px 0;
+                    padding-left: 5px;
+                    display: inline-block;
+                }
             }
             .actions {
                 flex: 1;
@@ -55,6 +110,7 @@
                             }
                             .selection-count {
                                 margin-left: 10px;
+                                font-size: 1rem;
                             }
                         }
                         & > div {
@@ -67,7 +123,7 @@
                 }
             }
             .plate, .driver {
-                flex: 4;
+                flex: 3;
             }
             .type, .status  {
                 flex: 2;
