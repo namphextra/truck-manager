@@ -6,6 +6,7 @@ import 'bootstrap'
 import '@/assets/style/app.scss'
 
 Vue.config.productionTip = false
+Vue.prototype.$eventHub = new Vue()
 
 new Vue({
   store,
