@@ -9,7 +9,7 @@ export default {
         url,
         data
       })
-      return response.data
+      return { data: response.data, headers: response.headers }
     } catch (e) {
       return false
     }

@@ -9,7 +9,7 @@
           :options="getOptionsFilter()"
           v-model="searchTruckOption"
         />
-        <input type="text" v-model="searchTruck" class="form-control filter-search" placeholder="Search trucks">
+        <input type="text" v-model="searchTruck" class="form-control filter-search" placeholder="Search trucks" @keyup.enter="getFilteredTrucks()">
         <button class="btn btn-outline btn-search" @click="getFilteredTrucks()">Search</button>
       </div>
       <div class="col-6 text-right">
@@ -41,8 +41,9 @@
           </ul>
         </div>
         <div class="plate kit-section-title__item">{{ truckSelected.length ? '' : 'Truck plate' }}</div>
-        <div class="driver kit-section-title__item">{{ truckSelected.length ? '' : 'Driver' }}</div>
-        <div class="type kit-section-title__item">{{ truckSelected.length ? '' : 'Truck type' }}</div>
+        <div class="packing-address kit-section-title__item">{{ truckSelected.length ? '' : 'Address' }}</div>
+        <div class="price kit-section-title__item">{{ truckSelected.length ? '' : 'Truck price' }}</div>
+        <div class="cargo-type kit-section-title__item">{{ truckSelected.length ? '' : 'Cargo type' }}</div>
         <div class="status kit-section-title__item">{{ truckSelected.length ? '' : 'Status' }}</div>
       </div>
       <div class="kit-section-body">
@@ -54,10 +55,14 @@
             </div>
           </div>
           <div class="plate table-list-item" @click="goToTruckSetting(truck.plate)">{{ truck.plate }}</div>
-          <div class="driver table-list-item" @click="goToTruckSetting(truck.plate)">{{ truck.driver }}</div>
-          <div class="type table-list-item" @click="goToTruckSetting(truck.plate)">{{ truck.truck_type + ' ton' }}</div>
+          <div class="packing-address table-list-item" @click="goToTruckSetting(truck.plate)">{{ truck.packing_address }}</div>
+          <div class="price table-list-item" @click="goToTruckSetting(truck.plate)">{{ truck.price }}</div>
+          <div class="cargo-type table-list-item" @click="goToTruckSetting(truck.plate)">{{ truck.cargo_type }}</div>
           <div class="status table-list-item" @click="goToTruckSetting(truck.plate)">{{ truck.status }}</div>
         </div>
+      </div>
+      <div class="wrapper-pagination d-flex justify-content-center" v-if="pagination.length > 1">
+        <div :class="['pagination-item text-center', { 'activated': item === currentPage }]" v-for="(item, index) in pagination" :key="index" @click="onClickPaginationItem(item)">{{ item === 0 ? '...' : item }}</div>
       </div>
     </div>
   </div>
@@ -75,15 +80,18 @@ export default {
   },
   async created () {
     this.$eventHub.$emit('start-progress-line')
-    const trucks = await API.getTrucks()
-    this.setTrucks(trucks)
+    const res = await API.getTrucks({ page: 1 })
+    this.setTrucks(res.data)
+    this.totalTrucks = Number(res.headers['x-total-count'])
     this.$eventHub.$emit('end-progress-line')
   },
   data () {
     return {
       searchTruckOption: 'all',
       searchTruck: '',
-      truckSelected: []
+      truckSelected: [],
+      currentPage: 1,
+      totalTrucks: 0
     }
   },
   computed: {
@@ -104,6 +112,24 @@ export default {
         }
         this.truckSelected = select
       }
+    },
+    pagination () {
+      const totalPage = Math.ceil(this.totalTrucks / 5)
+      let pagination = []
+      if (totalPage < 6) {
+        pagination = [...Array(totalPage).keys()].map(x => ++x)
+      } else {
+        if (this.currentPage > 3 && this.currentPage < totalPage - 2) {
+          pagination = [1, 0, this.currentPage - 1, this.currentPage, this.currentPage + 1, 0, totalPage]
+        }
+        if (this.currentPage >= totalPage - 2) {
+          pagination = [1, 0, totalPage - 2, totalPage - 1, totalPage]
+        }
+        if (this.currentPage < 4) {
+          pagination = [1, 2, 3, 4, 0, totalPage]
+        }
+      }
+      return pagination
     }
   },
   methods: {
@@ -159,8 +185,8 @@ export default {
       for (let i = 0; i < this.truckSelected.length; i++) {
         await API.deleteTrucks(this.truckSelected[i])
       }
-      const trucks = await API.getTrucks()
-      this.setTrucks(trucks)
+      const res = await API.getTrucks({ page: 1 }).data
+      this.setTrucks(res.data)
       this.truckSelected = []
       this.$eventHub.$emit('end-progress-line')
     },
@@ -177,13 +203,24 @@ export default {
       this.$router.push({
         name: 'truck',
         params: {
-          plate: 'create',
+          plate: '',
           type: 'create'
         }
       })
     },
     async getFilteredTrucks () {
-      await API.getTrucks({ option: this.searchTruckOption })
+      this.$eventHub.$emit('start-progress-line')
+      const res = await API.getTrucks({ option: this.searchTruckOption, filter: this.searchTruck, page: 1 })
+      this.setTrucks(res.data)
+      this.$eventHub.$emit('end-progress-line')
+    },
+    async onClickPaginationItem (item) {
+      if (item === 0) return
+      this.currentPage = item
+      this.$eventHub.$emit('start-progress-line')
+      const res = await API.getTrucks({ option: this.searchTruckOption, filter: this.searchTruck, page: item })
+      this.setTrucks(res.data)
+      this.$eventHub.$emit('end-progress-line')
     }
   }
 }

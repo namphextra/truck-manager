@@ -7,6 +7,7 @@
         <div class="row" v-if="fetched">
           <div class="col-12 col-md-4">
             <tm-input
+              class="truck-plate"
               label="Truck plate:"
               v-model="truck.plate"
               :use-validate="true"
@@ -138,9 +139,9 @@ export default {
   },
   async created () {
     this.$eventHub.$emit('start-progress-line')
-    if (this.$route.params.type === 'update') {
-      const truck = await API.getTruckByPlate(this.$route.params.plate)
-      this.$set(this, 'truck', truck[0])
+    if (this.$route.params.plate) {
+      const res = await API.getTruckByPlate(this.$route.params.plate)
+      this.$set(this, 'truck', res.data[0])
     } else {
       this.$set(this, 'truck', {
         plate: '',
