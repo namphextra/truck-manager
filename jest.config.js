@@ -1,23 +1,34 @@
+const path = require('path')
+
 module.exports = {
+  rootDir: path.resolve(__dirname, './'),
   moduleFileExtensions: [
     'js',
-    'jsx',
     'json',
     'vue'
   ],
-  transform: {
-    '^.+\\.vue$': 'vue-jest',
-    '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
-    '^.+\\.jsx?$': 'babel-jest'
-  },
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1'
+    '^@/(.*)$': '<rootDir>/src/$1',
+    '^components/(.*)$': '<rootDir>/src/components/$1'
   },
-  snapshotSerializers: [
-    'jest-serializer-vue'
+  transform: {
+    '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
+    '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest',
+    '\\.txt$': 'jest-raw-loader',
+    '\\.svg': 'jest-raw-loader'
+  },
+  transformIgnorePatterns: [
+    '/node_modules/(?!@babel).+\\.js$',
+    '/node_modules/babel-jest/build/index.js'
   ],
-  testMatch: [
-    '**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'
+  testPathIgnorePatterns: [
+    '<rootDir>/tests/e2e'
   ],
-  testURL: 'http://localhost/'
+  snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
+  collectCoverageFrom: [
+    'src/**/*.{js,vue}',
+    '!src/main.js',
+    '!src/router/index.js',
+    '!**/node_modules/**'
+  ]
 }

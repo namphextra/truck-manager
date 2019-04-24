@@ -1,0 +1,2097 @@
+{
+    "backend_name": "Git",
+    "backend_version": "0.11.1",
+    "category": "commit",
+    "classified_fields_filtered": null,
+    "data": {
+        "Author": "Nam Pham <namphextra@gmail.com>",
+        "AuthorDate": "Tue Feb 19 14:52:21 2019 +0700",
+        "Commit": "Nam Pham <namphextra@gmail.com>",
+        "CommitDate": "Tue Feb 19 14:52:21 2019 +0700",
+        "commit": "f20788452bb6e11b2b112cdac43d50dbc31a2c70",
+        "files": [
+            {
+                "action": "A",
+                "added": "3",
+                "file": ".browserslistrc",
+                "indexes": [
+                    "0000000",
+                    "9dee646"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "5",
+                "file": ".editorconfig",
+                "indexes": [
+                    "0000000",
+                    "7053c49"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "17",
+                "file": ".eslintrc.js",
+                "indexes": [
+                    "0000000",
+                    "98d0431"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "21",
+                "file": ".gitignore",
+                "indexes": [
+                    "0000000",
+                    "185e663"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "34",
+                "file": "README.md",
+                "indexes": [
+                    "0000000",
+                    "fef96f0"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "5",
+                "file": "babel.config.js",
+                "indexes": [
+                    "0000000",
+                    "ba17966"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "23",
+                "file": "jest.config.js",
+                "indexes": [
+                    "0000000",
+                    "29fee32"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "31",
+                "file": "package.json",
+                "indexes": [
+                    "0000000",
+                    "ca28c2c"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "5",
+                "file": "postcss.config.js",
+                "indexes": [
+                    "0000000",
+                    "961986e"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "-",
+                "file": "public/favicon.ico",
+                "indexes": [
+                    "0000000",
+                    "c7b9a43"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "-"
+            },
+            {
+                "action": "A",
+                "added": "17",
+                "file": "public/index.html",
+                "indexes": [
+                    "0000000",
+                    "1b6c533"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "29",
+                "file": "src/App.vue",
+                "indexes": [
+                    "0000000",
+                    "f300d4b"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "-",
+                "file": "src/assets/logo.png",
+                "indexes": [
+                    "0000000",
+                    "f3d2503"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "-"
+            },
+            {
+                "action": "A",
+                "added": "59",
+                "file": "src/components/HelloWorld.vue",
+                "indexes": [
+                    "0000000",
+                    "428c117"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "10",
+                "file": "src/main.js",
+                "indexes": [
+                    "0000000",
+                    "659607d"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "25",
+                "file": "src/router.js",
+                "indexes": [
+                    "0000000",
+                    "39650f9"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "5",
+                "file": "src/views/About.vue",
+                "indexes": [
+                    "0000000",
+                    "3fa2807"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "18",
+                "file": "src/views/Home.vue",
+                "indexes": [
+                    "0000000",
+                    "fc2e940"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "5",
+                "file": "tests/unit/.eslintrc.js",
+                "indexes": [
+                    "0000000",
+                    "958d51b"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "12",
+                "file": "tests/unit/example.spec.js",
+                "indexes": [
+                    "0000000",
+                    "f84fb39"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "10074",
+                "file": "yarn.lock",
+                "indexes": [
+                    "0000000",
+                    "1b3ca24"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            }
+        ],
+        "message": "init",
+        "parents": [],
+        "refs": []
+    },
+    "origin": "git@github.com:namphextra/truck-manager.git",
+    "perceval_version": "0.12.8",
+    "tag": "git@github.com:namphextra/truck-manager.git",
+    "timestamp": 1556071361.69741,
+    "updated_on": 1550562741.0,
+    "uuid": "1d51d48a0f169cc62b8b770a1cccd3c891db6a0a"
+}
+{
+    "backend_name": "Git",
+    "backend_version": "0.11.1",
+    "category": "commit",
+    "classified_fields_filtered": null,
+    "data": {
+        "Author": "Nam Pham <namphextra@gmail.com>",
+        "AuthorDate": "Tue Feb 19 19:22:51 2019 +0700",
+        "Commit": "Nam Pham <namphextra@gmail.com>",
+        "CommitDate": "Tue Feb 19 19:22:51 2019 +0700",
+        "commit": "884561ed6691a7ca5812424a28333c028649a76e",
+        "files": [
+            {
+                "action": "A",
+                "added": "89",
+                "file": "build/webpack.base.conf.js",
+                "indexes": [
+                    "0000000",
+                    "9561c1d"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "19",
+                "file": "build/webpack.dev.conf.js",
+                "indexes": [
+                    "0000000",
+                    "824185d"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "M",
+                "added": "17",
+                "file": "package.json",
+                "indexes": [
+                    "ca28c2c",
+                    "683dd4f"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "2"
+            },
+            {
+                "action": "M",
+                "added": "2",
+                "file": "public/index.html",
+                "indexes": [
+                    "1b6c533",
+                    "c0b424b"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "M",
+                "added": "4",
+                "file": "src/App.vue",
+                "indexes": [
+                    "f300d4b",
+                    "cdce03b"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "24"
+            },
+            {
+                "action": "A",
+                "added": "10",
+                "file": "src/api/index.js",
+                "indexes": [
+                    "0000000",
+                    "af548ed"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "1",
+                "file": "src/assets/style/app.scss",
+                "indexes": [
+                    "0000000",
+                    "c1e3773"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "D",
+                "added": "0",
+                "file": "src/components/HelloWorld.vue",
+                "indexes": [
+                    "428c117",
+                    "0000000"
+                ],
+                "modes": [
+                    "100644",
+                    "000000"
+                ],
+                "removed": "59"
+            },
+            {
+                "action": "M",
+                "added": "2",
+                "file": "src/main.js",
+                "indexes": [
+                    "659607d",
+                    "621c429"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "M",
+                "added": "14",
+                "file": "src/router.js",
+                "indexes": [
+                    "39650f9",
+                    "f075757"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "10"
+            },
+            {
+                "action": "A",
+                "added": "25",
+                "file": "src/services/http.js",
+                "indexes": [
+                    "0000000",
+                    "7a1d4ba"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "D",
+                "added": "0",
+                "file": "src/views/About.vue",
+                "indexes": [
+                    "3fa2807",
+                    "0000000"
+                ],
+                "modes": [
+                    "100644",
+                    "000000"
+                ],
+                "removed": "5"
+            },
+            {
+                "action": "A",
+                "added": "37",
+                "file": "src/views/Admin.vue",
+                "indexes": [
+                    "0000000",
+                    "d78a8db"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "M",
+                "added": "10",
+                "file": "src/views/Home.vue",
+                "indexes": [
+                    "fc2e940",
+                    "1f43997"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "18"
+            },
+            {
+                "action": "A",
+                "added": "7",
+                "file": "src/views/Posts.vue",
+                "indexes": [
+                    "0000000",
+                    "b57e450"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "M",
+                "added": "410",
+                "file": "yarn.lock",
+                "indexes": [
+                    "1b3ca24",
+                    "1539ee7"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "10"
+            }
+        ],
+        "message": "Create app",
+        "parents": [
+            "f20788452bb6e11b2b112cdac43d50dbc31a2c70"
+        ],
+        "refs": []
+    },
+    "origin": "git@github.com:namphextra/truck-manager.git",
+    "perceval_version": "0.12.8",
+    "tag": "git@github.com:namphextra/truck-manager.git",
+    "timestamp": 1556071361.699527,
+    "updated_on": 1550578971.0,
+    "uuid": "1c9b4e62f345d7432410eedefe349b13aee89427"
+}
+{
+    "backend_name": "Git",
+    "backend_version": "0.11.1",
+    "category": "commit",
+    "classified_fields_filtered": null,
+    "data": {
+        "Author": "Nam Pham <namphextra@gmail.com>",
+        "AuthorDate": "Wed Feb 20 14:38:06 2019 +0700",
+        "Commit": "Nam Pham <namphextra@gmail.com>",
+        "CommitDate": "Wed Feb 20 14:38:06 2019 +0700",
+        "commit": "84a41a11292b56406fa44166527d1db7a76fd41b",
+        "files": [
+            {
+                "action": "M",
+                "added": "1",
+                "file": "public/index.html",
+                "indexes": [
+                    "c0b424b",
+                    "7c25130"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "M",
+                "added": "1",
+                "file": "src/App.vue",
+                "indexes": [
+                    "cdce03b",
+                    "61938cd"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "M",
+                "added": "17",
+                "file": "src/api/index.js",
+                "indexes": [
+                    "af548ed",
+                    "0ab7d40"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "M",
+                "added": "21",
+                "file": "src/router.js",
+                "indexes": [
+                    "f075757",
+                    "c363748"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "8"
+            },
+            {
+                "action": "M",
+                "added": "11",
+                "file": "src/services/http.js",
+                "indexes": [
+                    "7a1d4ba",
+                    "7d235cb"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "7"
+            },
+            {
+                "action": "M",
+                "added": "8",
+                "file": "src/views/Admin.vue",
+                "indexes": [
+                    "d78a8db",
+                    "b5b4c16"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "2"
+            },
+            {
+                "action": "M",
+                "added": "60",
+                "file": "src/views/Posts.vue",
+                "indexes": [
+                    "b57e450",
+                    "5b0a665"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "2"
+            }
+        ],
+        "message": "Update admin page and posts page",
+        "parents": [
+            "884561ed6691a7ca5812424a28333c028649a76e"
+        ],
+        "refs": []
+    },
+    "origin": "git@github.com:namphextra/truck-manager.git",
+    "perceval_version": "0.12.8",
+    "tag": "git@github.com:namphextra/truck-manager.git",
+    "timestamp": 1556071361.700207,
+    "updated_on": 1550648286.0,
+    "uuid": "23d8a3f5272515a539c561e3b89d924f333f0af0"
+}
+{
+    "backend_name": "Git",
+    "backend_version": "0.11.1",
+    "category": "commit",
+    "classified_fields_filtered": null,
+    "data": {
+        "Author": "namphextra <47771022+namphextra@users.noreply.github.com>",
+        "AuthorDate": "Wed Feb 20 14:40:15 2019 +0700",
+        "Commit": "GitHub <noreply@github.com>",
+        "CommitDate": "Wed Feb 20 14:40:15 2019 +0700",
+        "Merge": "884561e 84a41a1",
+        "commit": "026683b6a0da593226b14b8ee0463d7b4bfe1480",
+        "files": [
+            {
+                "added": "1",
+                "file": "public/index.html",
+                "removed": "1"
+            },
+            {
+                "added": "1",
+                "file": "src/App.vue",
+                "removed": "1"
+            },
+            {
+                "added": "17",
+                "file": "src/api/index.js",
+                "removed": "1"
+            },
+            {
+                "added": "21",
+                "file": "src/router.js",
+                "removed": "8"
+            },
+            {
+                "added": "11",
+                "file": "src/services/http.js",
+                "removed": "7"
+            },
+            {
+                "added": "8",
+                "file": "src/views/Admin.vue",
+                "removed": "2"
+            },
+            {
+                "added": "60",
+                "file": "src/views/Posts.vue",
+                "removed": "2"
+            }
+        ],
+        "message": "Merge pull request #1 from namphextra/create-admin\n\nUpdate admin page and posts page",
+        "parents": [
+            "884561ed6691a7ca5812424a28333c028649a76e",
+            "84a41a11292b56406fa44166527d1db7a76fd41b"
+        ],
+        "refs": []
+    },
+    "origin": "git@github.com:namphextra/truck-manager.git",
+    "perceval_version": "0.12.8",
+    "tag": "git@github.com:namphextra/truck-manager.git",
+    "timestamp": 1556071361.700638,
+    "updated_on": 1550648415.0,
+    "uuid": "81dd1061578e721cac2f7b5c5f3b39a80befb05f"
+}
+{
+    "backend_name": "Git",
+    "backend_version": "0.11.1",
+    "category": "commit",
+    "classified_fields_filtered": null,
+    "data": {
+        "Author": "Nam Pham <namphextra@gmail.com>",
+        "AuthorDate": "Thu Apr 18 14:58:26 2019 +0700",
+        "Commit": "Nam Pham <namphextra@gmail.com>",
+        "CommitDate": "Thu Apr 18 14:58:26 2019 +0700",
+        "commit": "4acba38efec52408b43494c7579961fe4e64e8bc",
+        "files": [
+            {
+                "action": "M",
+                "added": "11",
+                "file": "README.md",
+                "indexes": [
+                    "fef96f0",
+                    "574e254"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "6"
+            },
+            {
+                "action": "M",
+                "added": "8",
+                "file": "build/webpack.base.conf.js",
+                "indexes": [
+                    "9561c1d",
+                    "27fb022"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "M",
+                "added": "1",
+                "file": "build/webpack.dev.conf.js",
+                "indexes": [
+                    "824185d",
+                    "914b295"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "M",
+                "added": "7",
+                "file": "package.json",
+                "indexes": [
+                    "683dd4f",
+                    "a929226"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "3"
+            },
+            {
+                "action": "M",
+                "added": "0",
+                "file": "src/App.vue",
+                "indexes": [
+                    "61938cd",
+                    "eb6c1c2"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "4"
+            },
+            {
+                "action": "D",
+                "added": "-",
+                "file": "src/assets/logo.png",
+                "indexes": [
+                    "f3d2503",
+                    "0000000"
+                ],
+                "modes": [
+                    "100644",
+                    "000000"
+                ],
+                "removed": "-"
+            },
+            {
+                "action": "M",
+                "added": "1",
+                "file": "src/router.js",
+                "indexes": [
+                    "c363748",
+                    "5145b0a"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "8"
+            }
+        ],
+        "message": "Setup webpack and structure of project",
+        "parents": [
+            "026683b6a0da593226b14b8ee0463d7b4bfe1480"
+        ],
+        "refs": []
+    },
+    "origin": "git@github.com:namphextra/truck-manager.git",
+    "perceval_version": "0.12.8",
+    "tag": "git@github.com:namphextra/truck-manager.git",
+    "timestamp": 1556071361.700977,
+    "updated_on": 1555574306.0,
+    "uuid": "9f7c5db6d81c1649a0dc2cd750907a4cc58a0e0c"
+}
+{
+    "backend_name": "Git",
+    "backend_version": "0.11.1",
+    "category": "commit",
+    "classified_fields_filtered": null,
+    "data": {
+        "Author": "namphextra <47771022+namphextra@users.noreply.github.com>",
+        "AuthorDate": "Thu Apr 18 14:59:06 2019 +0700",
+        "Commit": "GitHub <noreply@github.com>",
+        "CommitDate": "Thu Apr 18 14:59:06 2019 +0700",
+        "Merge": "026683b 4acba38",
+        "commit": "6a3105a3ff4873002417e7edfba7fec79fdd8216",
+        "files": [
+            {
+                "added": "11",
+                "file": "README.md",
+                "removed": "6"
+            },
+            {
+                "added": "8",
+                "file": "build/webpack.base.conf.js",
+                "removed": "1"
+            },
+            {
+                "added": "1",
+                "file": "build/webpack.dev.conf.js",
+                "removed": "1"
+            },
+            {
+                "added": "7",
+                "file": "package.json",
+                "removed": "3"
+            },
+            {
+                "added": "0",
+                "file": "src/App.vue",
+                "removed": "4"
+            },
+            {
+                "added": "-",
+                "file": "src/assets/logo.png",
+                "removed": "-"
+            },
+            {
+                "added": "1",
+                "file": "src/router.js",
+                "removed": "8"
+            }
+        ],
+        "message": "Merge pull request #1 from namphextra/nam-update-truck-manager\n\nSetup webpack and structure of project",
+        "parents": [
+            "026683b6a0da593226b14b8ee0463d7b4bfe1480",
+            "4acba38efec52408b43494c7579961fe4e64e8bc"
+        ],
+        "refs": []
+    },
+    "origin": "git@github.com:namphextra/truck-manager.git",
+    "perceval_version": "0.12.8",
+    "tag": "git@github.com:namphextra/truck-manager.git",
+    "timestamp": 1556071361.701341,
+    "updated_on": 1555574346.0,
+    "uuid": "f8eb9e69af894b8ed9f24271e1fbaf10b644d5c1"
+}
+{
+    "backend_name": "Git",
+    "backend_version": "0.11.1",
+    "category": "commit",
+    "classified_fields_filtered": null,
+    "data": {
+        "Author": "Nam Pham <namphextra@gmail.com>",
+        "AuthorDate": "Sat Apr 20 15:47:04 2019 +0700",
+        "Commit": "Nam Pham <namphextra@gmail.com>",
+        "CommitDate": "Sat Apr 20 15:47:04 2019 +0700",
+        "commit": "3d9b60e07b973331b53740b160d3a565b6587636",
+        "files": [
+            {
+                "action": "M",
+                "added": "2",
+                "file": "public/index.html",
+                "indexes": [
+                    "7c25130",
+                    "cd06ba7"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "2"
+            },
+            {
+                "action": "M",
+                "added": "16",
+                "file": "src/App.vue",
+                "indexes": [
+                    "eb6c1c2",
+                    "52712d3"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "2"
+            },
+            {
+                "action": "M",
+                "added": "2",
+                "file": "src/api/index.js",
+                "indexes": [
+                    "0ab7d40",
+                    "559e895"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "21"
+            },
+            {
+                "action": "M",
+                "added": "10",
+                "file": "src/assets/style/app.scss",
+                "indexes": [
+                    "c1e3773",
+                    "5f487a0"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "M",
+                "added": "3",
+                "file": "src/main.js",
+                "indexes": [
+                    "621c429",
+                    "f4d3e34"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "D",
+                "added": "0",
+                "file": "src/router.js",
+                "indexes": [
+                    "5145b0a",
+                    "0000000"
+                ],
+                "modes": [
+                    "100644",
+                    "000000"
+                ],
+                "removed": "35"
+            },
+            {
+                "action": "M",
+                "added": "1",
+                "file": "src/services/http.js",
+                "indexes": [
+                    "7d235cb",
+                    "e863704"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "D",
+                "added": "0",
+                "file": "src/views/Admin.vue",
+                "indexes": [
+                    "b5b4c16",
+                    "0000000"
+                ],
+                "modes": [
+                    "100644",
+                    "000000"
+                ],
+                "removed": "43"
+            },
+            {
+                "action": "D",
+                "added": "0",
+                "file": "src/views/Home.vue",
+                "indexes": [
+                    "1f43997",
+                    "0000000"
+                ],
+                "modes": [
+                    "100644",
+                    "000000"
+                ],
+                "removed": "10"
+            },
+            {
+                "action": "D",
+                "added": "0",
+                "file": "src/views/Posts.vue",
+                "indexes": [
+                    "5b0a665",
+                    "0000000"
+                ],
+                "modes": [
+                    "100644",
+                    "000000"
+                ],
+                "removed": "65"
+            }
+        ],
+        "message": "Update menu sidebar and truck listing page",
+        "parents": [
+            "4acba38efec52408b43494c7579961fe4e64e8bc"
+        ],
+        "refs": []
+    },
+    "origin": "git@github.com:namphextra/truck-manager.git",
+    "perceval_version": "0.12.8",
+    "tag": "git@github.com:namphextra/truck-manager.git",
+    "timestamp": 1556071361.701694,
+    "updated_on": 1555750024.0,
+    "uuid": "81f7280c31bafb41c1b2fb7b21f2b69d1455b462"
+}
+{
+    "backend_name": "Git",
+    "backend_version": "0.11.1",
+    "category": "commit",
+    "classified_fields_filtered": null,
+    "data": {
+        "Author": "namphextra <47771022+namphextra@users.noreply.github.com>",
+        "AuthorDate": "Sat Apr 20 15:48:16 2019 +0700",
+        "Commit": "GitHub <noreply@github.com>",
+        "CommitDate": "Sat Apr 20 15:48:16 2019 +0700",
+        "Merge": "6a3105a 3d9b60e",
+        "commit": "fd709cb46667c65dbab61782d2d9fbe0e1fd4246",
+        "files": [
+            {
+                "added": "2",
+                "file": "public/index.html",
+                "removed": "2"
+            },
+            {
+                "added": "16",
+                "file": "src/App.vue",
+                "removed": "2"
+            },
+            {
+                "added": "2",
+                "file": "src/api/index.js",
+                "removed": "21"
+            },
+            {
+                "added": "10",
+                "file": "src/assets/style/app.scss",
+                "removed": "0"
+            },
+            {
+                "added": "3",
+                "file": "src/main.js",
+                "removed": "1"
+            },
+            {
+                "added": "0",
+                "file": "src/router.js",
+                "removed": "35"
+            },
+            {
+                "added": "1",
+                "file": "src/services/http.js",
+                "removed": "1"
+            },
+            {
+                "added": "0",
+                "file": "src/views/Admin.vue",
+                "removed": "43"
+            },
+            {
+                "added": "0",
+                "file": "src/views/Home.vue",
+                "removed": "10"
+            },
+            {
+                "added": "0",
+                "file": "src/views/Posts.vue",
+                "removed": "65"
+            }
+        ],
+        "message": "Merge pull request #2 from namphextra/nam-update-truck-manager\n\nUpdate menu sidebar and truck listing page",
+        "parents": [
+            "6a3105a3ff4873002417e7edfba7fec79fdd8216",
+            "3d9b60e07b973331b53740b160d3a565b6587636"
+        ],
+        "refs": []
+    },
+    "origin": "git@github.com:namphextra/truck-manager.git",
+    "perceval_version": "0.12.8",
+    "tag": "git@github.com:namphextra/truck-manager.git",
+    "timestamp": 1556071361.703978,
+    "updated_on": 1555750096.0,
+    "uuid": "0d5c6b1f15ff41da991620675bd311c33daf415b"
+}
+{
+    "backend_name": "Git",
+    "backend_version": "0.11.1",
+    "category": "commit",
+    "classified_fields_filtered": null,
+    "data": {
+        "Author": "Nam Pham <namphextra@gmail.com>",
+        "AuthorDate": "Sat Apr 20 15:48:57 2019 +0700",
+        "Commit": "Nam Pham <namphextra@gmail.com>",
+        "CommitDate": "Sat Apr 20 15:48:57 2019 +0700",
+        "commit": "ee836746513f76dcd947f1ba36b023d037ec8290",
+        "files": [
+            {
+                "action": "A",
+                "added": "11",
+                "file": "build/webpack.prod.conf.js",
+                "indexes": [
+                    "0000000",
+                    "b685996"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "43",
+                "file": "db/fake.json",
+                "indexes": [
+                    "0000000",
+                    "a2b0163"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "4",
+                "file": "db/middleware.js",
+                "indexes": [
+                    "0000000",
+                    "99593db"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "17586",
+                "file": "package-lock.json",
+                "indexes": [
+                    "0000000",
+                    "9a124d3"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "-",
+                "file": "src/assets/images/favicon.png",
+                "indexes": [
+                    "0000000",
+                    "e5a8c07"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "-"
+            },
+            {
+                "action": "A",
+                "added": "55",
+                "file": "src/assets/images/logo.svg",
+                "indexes": [
+                    "0000000",
+                    "7ac4301"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "2",
+                "file": "src/assets/style/_variables.scss",
+                "indexes": [
+                    "0000000",
+                    "4198ecf"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "58",
+                "file": "src/assets/style/components/_common.scss",
+                "indexes": [
+                    "0000000",
+                    "0027d5a"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "30",
+                "file": "src/assets/style/components/_section.scss",
+                "indexes": [
+                    "0000000",
+                    "e40ba70"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "35",
+                "file": "src/assets/style/components/_sidebar.scss",
+                "indexes": [
+                    "0000000",
+                    "19c70e9"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "77",
+                "file": "src/assets/style/pages/_truck-list.scss",
+                "indexes": [
+                    "0000000",
+                    "b8637a3"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "24",
+                "file": "src/components/Select.vue",
+                "indexes": [
+                    "0000000",
+                    "f302e72"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "31",
+                "file": "src/components/layout/AppSidebar.vue",
+                "indexes": [
+                    "0000000",
+                    "8284537"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "12",
+                "file": "src/constants/SidebarMenu.js",
+                "indexes": [
+                    "0000000",
+                    "f3db0c6"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "17",
+                "file": "src/router/index.js",
+                "indexes": [
+                    "0000000",
+                    "3ec9c73"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "33",
+                "file": "src/router/routes.js",
+                "indexes": [
+                    "0000000",
+                    "c342d88"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "6",
+                "file": "src/store/actions.js",
+                "indexes": [
+                    "0000000",
+                    "e68b5a1"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "15",
+                "file": "src/store/index.js",
+                "indexes": [
+                    "0000000",
+                    "0be939e"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "7",
+                "file": "src/store/mutations.js",
+                "indexes": [
+                    "0000000",
+                    "dae6951"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "5",
+                "file": "src/store/state.js",
+                "indexes": [
+                    "0000000",
+                    "956887e"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "9",
+                "file": "src/views/truck/Index.vue",
+                "indexes": [
+                    "0000000",
+                    "953d6d8"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "11",
+                "file": "src/views/truck/Truck.vue",
+                "indexes": [
+                    "0000000",
+                    "4caeff1"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "160",
+                "file": "src/views/truck/TruckList.vue",
+                "indexes": [
+                    "0000000",
+                    "7f5be8c"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            }
+        ],
+        "message": "Update menu sidebar and truck listing page",
+        "parents": [
+            "3d9b60e07b973331b53740b160d3a565b6587636"
+        ],
+        "refs": []
+    },
+    "origin": "git@github.com:namphextra/truck-manager.git",
+    "perceval_version": "0.12.8",
+    "tag": "git@github.com:namphextra/truck-manager.git",
+    "timestamp": 1556071361.709614,
+    "updated_on": 1555750137.0,
+    "uuid": "d506721aac9cb8456f218168ca63ba18dde0d4f1"
+}
+{
+    "backend_name": "Git",
+    "backend_version": "0.11.1",
+    "category": "commit",
+    "classified_fields_filtered": null,
+    "data": {
+        "Author": "namphextra <47771022+namphextra@users.noreply.github.com>",
+        "AuthorDate": "Sat Apr 20 15:49:26 2019 +0700",
+        "Commit": "GitHub <noreply@github.com>",
+        "CommitDate": "Sat Apr 20 15:49:26 2019 +0700",
+        "Merge": "fd709cb ee83674",
+        "commit": "84c3b582e421f2caca464452d2140873766b6d66",
+        "files": [
+            {
+                "added": "11",
+                "file": "build/webpack.prod.conf.js",
+                "removed": "0"
+            },
+            {
+                "added": "43",
+                "file": "db/fake.json",
+                "removed": "0"
+            },
+            {
+                "added": "4",
+                "file": "db/middleware.js",
+                "removed": "0"
+            },
+            {
+                "added": "17586",
+                "file": "package-lock.json",
+                "removed": "0"
+            },
+            {
+                "added": "-",
+                "file": "src/assets/images/favicon.png",
+                "removed": "-"
+            },
+            {
+                "added": "55",
+                "file": "src/assets/images/logo.svg",
+                "removed": "0"
+            },
+            {
+                "added": "2",
+                "file": "src/assets/style/_variables.scss",
+                "removed": "0"
+            },
+            {
+                "added": "58",
+                "file": "src/assets/style/components/_common.scss",
+                "removed": "0"
+            },
+            {
+                "added": "30",
+                "file": "src/assets/style/components/_section.scss",
+                "removed": "0"
+            },
+            {
+                "added": "35",
+                "file": "src/assets/style/components/_sidebar.scss",
+                "removed": "0"
+            },
+            {
+                "added": "77",
+                "file": "src/assets/style/pages/_truck-list.scss",
+                "removed": "0"
+            },
+            {
+                "added": "24",
+                "file": "src/components/Select.vue",
+                "removed": "0"
+            },
+            {
+                "added": "31",
+                "file": "src/components/layout/AppSidebar.vue",
+                "removed": "0"
+            },
+            {
+                "added": "12",
+                "file": "src/constants/SidebarMenu.js",
+                "removed": "0"
+            },
+            {
+                "added": "17",
+                "file": "src/router/index.js",
+                "removed": "0"
+            },
+            {
+                "added": "33",
+                "file": "src/router/routes.js",
+                "removed": "0"
+            },
+            {
+                "added": "6",
+                "file": "src/store/actions.js",
+                "removed": "0"
+            },
+            {
+                "added": "15",
+                "file": "src/store/index.js",
+                "removed": "0"
+            },
+            {
+                "added": "7",
+                "file": "src/store/mutations.js",
+                "removed": "0"
+            },
+            {
+                "added": "5",
+                "file": "src/store/state.js",
+                "removed": "0"
+            },
+            {
+                "added": "9",
+                "file": "src/views/truck/Index.vue",
+                "removed": "0"
+            },
+            {
+                "added": "11",
+                "file": "src/views/truck/Truck.vue",
+                "removed": "0"
+            },
+            {
+                "added": "160",
+                "file": "src/views/truck/TruckList.vue",
+                "removed": "0"
+            }
+        ],
+        "message": "Merge pull request #3 from namphextra/nam-update-truck-manager\n\nUpdate menu sidebar and truck listing page",
+        "parents": [
+            "fd709cb46667c65dbab61782d2d9fbe0e1fd4246",
+            "ee836746513f76dcd947f1ba36b023d037ec8290"
+        ],
+        "refs": []
+    },
+    "origin": "git@github.com:namphextra/truck-manager.git",
+    "perceval_version": "0.12.8",
+    "tag": "git@github.com:namphextra/truck-manager.git",
+    "timestamp": 1556071361.710452,
+    "updated_on": 1555750166.0,
+    "uuid": "435ab0947a20cfdfba2540c7c8e4040db1391126"
+}
+{
+    "backend_name": "Git",
+    "backend_version": "0.11.1",
+    "category": "commit",
+    "classified_fields_filtered": null,
+    "data": {
+        "Author": "Nam Pham <namphextra@gmail.com>",
+        "AuthorDate": "Tue Apr 23 14:50:45 2019 +0700",
+        "Commit": "Nam Pham <namphextra@gmail.com>",
+        "CommitDate": "Tue Apr 23 14:50:45 2019 +0700",
+        "commit": "d17f7dd62a7c72a260eb3451bb6b210bdf791aa2",
+        "files": [
+            {
+                "action": "M",
+                "added": "42",
+                "file": "db/fake.json",
+                "indexes": [
+                    "a2b0163",
+                    "17ce276"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "42"
+            },
+            {
+                "action": "M",
+                "added": "29",
+                "file": "src/App.vue",
+                "indexes": [
+                    "52712d3",
+                    "9e0357a"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "M",
+                "added": "14",
+                "file": "src/api/index.js",
+                "indexes": [
+                    "559e895",
+                    "83d0731"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "M",
+                "added": "2",
+                "file": "src/assets/style/_variables.scss",
+                "indexes": [
+                    "4198ecf",
+                    "3f7cd01"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "M",
+                "added": "2",
+                "file": "src/assets/style/app.scss",
+                "indexes": [
+                    "5f487a0",
+                    "e901d41"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "M",
+                "added": "47",
+                "file": "src/assets/style/components/_common.scss",
+                "indexes": [
+                    "0027d5a",
+                    "dc05e99"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "2"
+            },
+            {
+                "action": "M",
+                "added": "11",
+                "file": "src/assets/style/components/_section.scss",
+                "indexes": [
+                    "e40ba70",
+                    "61f5e96"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "23"
+            },
+            {
+                "action": "M",
+                "added": "1",
+                "file": "src/assets/style/components/_sidebar.scss",
+                "indexes": [
+                    "19c70e9",
+                    "2983b2d"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "M",
+                "added": "59",
+                "file": "src/assets/style/pages/_truck-list.scss",
+                "indexes": [
+                    "b8637a3",
+                    "3f240f9"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "3"
+            },
+            {
+                "action": "A",
+                "added": "27",
+                "file": "src/assets/style/pages/_truck.scss",
+                "indexes": [
+                    "0000000",
+                    "979c9d3"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "A",
+                "added": "64",
+                "file": "src/components/Input.vue",
+                "indexes": [
+                    "0000000",
+                    "4af8391"
+                ],
+                "modes": [
+                    "000000",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "M",
+                "added": "1",
+                "file": "src/main.js",
+                "indexes": [
+                    "f4d3e34",
+                    "2e4f6cf"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "0"
+            },
+            {
+                "action": "M",
+                "added": "178",
+                "file": "src/views/truck/Truck.vue",
+                "indexes": [
+                    "4caeff1",
+                    "dfc6241"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "M",
+                "added": "46",
+                "file": "src/views/truck/TruckList.vue",
+                "indexes": [
+                    "7f5be8c",
+                    "de9644b"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "16"
+            }
+        ],
+        "message": "Add a single truck page",
+        "parents": [
+            "ee836746513f76dcd947f1ba36b023d037ec8290"
+        ],
+        "refs": []
+    },
+    "origin": "git@github.com:namphextra/truck-manager.git",
+    "perceval_version": "0.12.8",
+    "tag": "git@github.com:namphextra/truck-manager.git",
+    "timestamp": 1556071361.710948,
+    "updated_on": 1556005845.0,
+    "uuid": "cc370acd4cfbc596c5476bafe5c6333fa7848842"
+}
+{
+    "backend_name": "Git",
+    "backend_version": "0.11.1",
+    "category": "commit",
+    "classified_fields_filtered": null,
+    "data": {
+        "Author": "namphextra <47771022+namphextra@users.noreply.github.com>",
+        "AuthorDate": "Tue Apr 23 14:51:31 2019 +0700",
+        "Commit": "GitHub <noreply@github.com>",
+        "CommitDate": "Tue Apr 23 14:51:31 2019 +0700",
+        "Merge": "84c3b58 d17f7dd",
+        "commit": "31d128edae77aa8ba3361705aa46220ce219b053",
+        "files": [
+            {
+                "added": "42",
+                "file": "db/fake.json",
+                "removed": "42"
+            },
+            {
+                "added": "29",
+                "file": "src/App.vue",
+                "removed": "1"
+            },
+            {
+                "added": "14",
+                "file": "src/api/index.js",
+                "removed": "0"
+            },
+            {
+                "added": "2",
+                "file": "src/assets/style/_variables.scss",
+                "removed": "1"
+            },
+            {
+                "added": "2",
+                "file": "src/assets/style/app.scss",
+                "removed": "1"
+            },
+            {
+                "added": "47",
+                "file": "src/assets/style/components/_common.scss",
+                "removed": "2"
+            },
+            {
+                "added": "11",
+                "file": "src/assets/style/components/_section.scss",
+                "removed": "23"
+            },
+            {
+                "added": "1",
+                "file": "src/assets/style/components/_sidebar.scss",
+                "removed": "0"
+            },
+            {
+                "added": "59",
+                "file": "src/assets/style/pages/_truck-list.scss",
+                "removed": "3"
+            },
+            {
+                "added": "27",
+                "file": "src/assets/style/pages/_truck.scss",
+                "removed": "0"
+            },
+            {
+                "added": "64",
+                "file": "src/components/Input.vue",
+                "removed": "0"
+            },
+            {
+                "added": "1",
+                "file": "src/main.js",
+                "removed": "0"
+            },
+            {
+                "added": "178",
+                "file": "src/views/truck/Truck.vue",
+                "removed": "1"
+            },
+            {
+                "added": "46",
+                "file": "src/views/truck/TruckList.vue",
+                "removed": "16"
+            }
+        ],
+        "message": "Merge pull request #4 from namphextra/nam-update-truck-manager\n\nAdd a single truck page",
+        "parents": [
+            "84c3b582e421f2caca464452d2140873766b6d66",
+            "d17f7dd62a7c72a260eb3451bb6b210bdf791aa2"
+        ],
+        "refs": [
+            "HEAD -> refs/heads/master"
+        ]
+    },
+    "origin": "git@github.com:namphextra/truck-manager.git",
+    "perceval_version": "0.12.8",
+    "tag": "git@github.com:namphextra/truck-manager.git",
+    "timestamp": 1556071361.711759,
+    "updated_on": 1556005891.0,
+    "uuid": "3875fbab354c0eedba759713a642150ab177b180"
+}
+{
+    "backend_name": "Git",
+    "backend_version": "0.11.1",
+    "category": "commit",
+    "classified_fields_filtered": null,
+    "data": {
+        "Author": "Nam Pham <namphextra@gmail.com>",
+        "AuthorDate": "Tue Apr 23 17:38:56 2019 +0700",
+        "Commit": "Nam Pham <namphextra@gmail.com>",
+        "CommitDate": "Tue Apr 23 17:38:56 2019 +0700",
+        "commit": "db541c3b30aa07cbb622a75a2b877a2a44764021",
+        "files": [
+            {
+                "action": "M",
+                "added": "6",
+                "file": "src/api/index.js",
+                "indexes": [
+                    "83d0731",
+                    "c1f83d0"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "2"
+            },
+            {
+                "action": "M",
+                "added": "1",
+                "file": "src/assets/style/components/_common.scss",
+                "indexes": [
+                    "dc05e99",
+                    "12c1bbc"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "M",
+                "added": "26",
+                "file": "src/assets/style/pages/_truck-list.scss",
+                "indexes": [
+                    "3f240f9",
+                    "8a6efe2"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "4"
+            },
+            {
+                "action": "M",
+                "added": "1",
+                "file": "src/services/http.js",
+                "indexes": [
+                    "e863704",
+                    "bec263f"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "1"
+            },
+            {
+                "action": "M",
+                "added": "48",
+                "file": "src/views/truck/TruckList.vue",
+                "indexes": [
+                    "de9644b",
+                    "798f097"
+                ],
+                "modes": [
+                    "100644",
+                    "100644"
+                ],
+                "removed": "11"
+            }
+        ],
+        "message": "Update pagination to truck list",
+        "parents": [
+            "d17f7dd62a7c72a260eb3451bb6b210bdf791aa2"
+        ],
+        "refs": [
+            "refs/heads/nam-update-truck-manager"
+        ]
+    },
+    "origin": "git@github.com:namphextra/truck-manager.git",
+    "perceval_version": "0.12.8",
+    "tag": "git@github.com:namphextra/truck-manager.git",
+    "timestamp": 1556071361.712964,
+    "updated_on": 1556015936.0,
+    "uuid": "80d87e7b352b331f9cebd3fd9af5f9fd04d33b0d"
+}

@@ -203,7 +203,7 @@ export default {
       this.$router.push({
         name: 'truck',
         params: {
-          plate: 'create',
+          plate: '',
           type: 'create'
         }
       })
